@@ -1,0 +1,23 @@
+<div class="text-white ms-5 p-3"><h5 style="color: black;">{{aim}}</h5> </div>
+<div id="d1" class="container p-5 " style="height: 500px;  width: 400px; margin-top: 50px; border-radius: 25px; border: 1px white solid;">
+    <h2 style="text-align: center; color: white;">Login Page</h2>
+    <br>
+<form (ngSubmit)="login()" [formGroup]="loginForm">
+        <div><input name="acno" id="acid" class="form-control" type="text" [placeholder]="acnt" formControlName="acno" ></div>
+        <div *ngIf="this.loginForm.get('acno')?.errors&&this.loginForm.get('acno')?.touched" class="text-danger"><p>invalid accno</p></div>
+
+        <br>
+        <div><input name="psw" id="pid" class="form-control" type="password" placeholder="Password" formControlName="psw" ></div>
+        <div *ngIf="this.loginForm.get('psw')?.errors&&this.loginForm.get('psw')?.touched" class="text-danger"><p>invalid password</p></div>
+
+        <br>
+        <div style="margin-left: 117px;"><button type="submit" class="btn btn-success">Login</button></div>
+        <br>
+        <div style="margin-left: 65px; color: white;"> new user? &nbsp;<a style="text-decoration:none;" routerLink="register">register</a></div>
+
+</form> 
+</div>
+
+
+
+

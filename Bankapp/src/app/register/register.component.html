@@ -1,0 +1,24 @@
+<div id="d2" class="container p-5" style="height: 500px;  width: 500px; border-radius: 23px;  border: 1px white solid; margin-top: 100px; ">
+    <div style="text-align: center;">
+        <h3 style="color: white;">Registration Page</h3>
+    </div>
+    <br>
+   <form (ngSubmit)="register()" [formGroup]="registerForm">
+            <div><input id="unameid" name="username" class="container form-control" type="text" formControlName="uname"
+                    placeholder="Username"></div>
+                    <!-- *ngIf -->
+                    <div *ngIf="this.registerForm.get('uname')?.errors&&this.registerForm.get('uname')?.touched" class="text-danger"><p>invalid username</p></div>
+            <br>
+                    <div><input id="acnumid" name="accno" class="container form-control" type="text"formControlName="acno"
+                    placeholder="Acc Number"></div>
+                    <div *ngIf="this.registerForm.get('acno')?.errors&&this.registerForm.get('acno')?.touched" class="text-danger"><p>invalid accno</p></div>
+
+            <br>
+            <div><input id="pswd" name="pswd" class="container form-control" type="password" formControlName="pswd"
+                    placeholder="Password"></div>
+                    <div *ngIf="this.registerForm.get('pswd')?.errors&&this.registerForm.get('pswd')?.touched" class="text-danger"><p>invalid password</p></div>
+
+            <br>
+            <div style="text-align: center;"><button class="btn btn-success" type="submit">Register</button></div>
+   </form>
+</div>

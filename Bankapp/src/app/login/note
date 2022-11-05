@@ -1,0 +1,79 @@
+
+
+    html to ts
+    view to component
+
+
+1, one by binting (one way binting)
+
+
+   1.1 component to view
+     1.1.1 string interpolation {{}}
+     1.1.2 property binding  [property]="value"
+
+   1.2 view t component
+     1.2.1 event binting (event name)="fuctionname()"
+     1.2.2 event binting using sevent  (event name)="fucnton name(servent)"
+     1.2.3 event binding using template rendering variable #variable_name
+
+
+
+2,two way binding
+ 2.1 ngModel - FormModule
+
+
+
+
+    Redirection 
+.......................
+Method navigateBYUrl---Router class method
+
+Dependency Injection -data sharing b/t  two depentent class
+
+
+   Angular Services
+........................
+
+to store redented database
+
+ng g s service_name - to create
+
+
+   Validating inputs
+.......................
+
+Angular Form validation
+  
+   1.template driven Form  -html
+   2.model driven Form  - ts
+      2.1-Reactive form
+      -form group
+      -array
+      -controller
+
+npm i -to install node pakage module while cloning angular project
+
+
+   Local storage in angular
+..................................
+  -setItem()
+  -getItem()
+  -removeItem()
+   
+..................................................................................
+
+
+To create http request
+''''''''''''''''''''''
+- import HttpClientModule
+  -class anem HttpClient
+
+
+
+
+api request is a asynchronouse request so to solve asynchronous request
+in ts we use RxJs method.....observed         ........resolve.......subscribe()
+                          (js promis)          ........reject........catch()
+                        
+
+
